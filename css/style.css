@@ -9,7 +9,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 :root {
     --header-color: #0B9586;
@@ -40,11 +40,11 @@ a {
     text-decoration: none;
 }
 section .animate {
-    transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    -o-transform: translateX(-100%);
+    transform: translateX(30px);
+    -webkit-transform: translateX(30px);
+    -moz-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    -o-transform: translateX(30px);
     transition: 1s;
     -webkit-transition: 1s;
     -moz-transition: 1s;
@@ -977,8 +977,8 @@ section.show-animate .animate {
         width: 45%;
         margin-bottom: 30px;
     }
-    .solar-box:first-child {
-        margin-right: 30px;
+    .solar-box {
+        margin: 0 10px;
     }
     .solar-box:last-child {
         width: 50%;
@@ -1476,8 +1476,8 @@ section.show-animate .animate {
         margin-bottom: 30px;
         height: auto;
     }
-    .values-box:first-child {
-        margin-right: 30px;
+    .values-box {
+        margin:0 10px;
     }
     .values-box:last-child {
         width: 50%;

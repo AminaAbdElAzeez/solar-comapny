@@ -124,11 +124,16 @@ const setLanguage = (language) => {
         element.textContent = translations[language][translationKey]
     });
 
-    document.dir = language === "ar" ? "rtl" : "ltr";
-
-    // if(language === "ar") {
-    //     document.dir = "rtl"
-    // } else {
-    //     document.dir = "ltr"
-    // }
+    // document.dir = language === "ar" ? "rtl" : "ltr";
+    const right = document.querySelector(".about-content .right")
+    const overlayBox = document.querySelector (".overlay-box");
+    if(language === "ar") {
+        document.dir = "rtl";
+        right.style.textAlign = "left";
+        overlayBox.style.right = "60px";
+    } else {
+        document.dir = "ltr";
+        right.style.textAlign = "right";
+        overlayBox.style.left = "60px";
+    }
 }
