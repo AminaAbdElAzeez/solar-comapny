@@ -8,9 +8,6 @@
 html {
     scroll-behavior: smooth;
 }
-body {
-    /* overflow-x: hidden; */
-}
 :root {
     --header-color: #0B9586;
     --nav-text: #B2DDD9;
