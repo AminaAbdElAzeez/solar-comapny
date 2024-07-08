@@ -8,6 +8,9 @@
 html {
     scroll-behavior: smooth;
 }
+body {
+    overflow-x: hidden;
+}
 :root {
     --header-color: #0B9586;
     --nav-text: #B2DDD9;
@@ -141,6 +144,25 @@ section.show-animate .animate {
     background-color: rgba(10, 116, 103, 0.8);
     color: var(--white);
 }
+.header-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.select {
+    font-size: 16px;
+    display: inline-block;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    outline: none;
+    border: none;
+    margin:0 15px;
+    width: 60px;
+    height: 35px;
+}
 .info {
     width: 130px;
     display: flex;
@@ -194,7 +216,17 @@ section.show-animate .animate {
     .list-icon:hover > i {
         color: var(--white);
     }
-
+}
+@media screen and (max-width:400px) {
+    .logo {
+        width: 70px;
+    }
+    .logo::after {
+        width: 70px;
+    }
+    .select {
+        margin: 0 7px;
+    }
 }
 /* End Styles For Header Section */
 
@@ -494,7 +526,7 @@ section.show-animate .animate {
 .about-list li:hover {
     color: var(--about-list-item);
 }
-.about-list li > span {
+.about-list li > span:nth-child(1) {
     color: var(--about-list-item);
 }
 .right {
@@ -685,6 +717,7 @@ section.show-animate .animate {
     bottom: 15px;
     left: 23px;
     text-align: left;
+    width: 180px;
 }
 @media screen and (max-width:1115px){
     .overlay-box {
@@ -737,6 +770,7 @@ section.show-animate .animate {
     .overlay-box-desc {
         font-size: 12px;
         left: 20px;
+        width: 160px;
     }
 }
 @media screen and (max-width:404px){
@@ -797,15 +831,26 @@ section.show-animate .animate {
 .power-btn {
     text-transform: capitalize;
     background-color: var(--home-btn2);
+    border: 2px solid var(--home-btn2);
     color: var(--grid-item);
     font-weight: 500;
     padding: 12px 25px;
-    border: none;
+    font-weight: 600;
+    cursor: pointer;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
+    transition: background-color 0.5s , color 0.5s;
+    -webkit-transition: background-color 0.5s , color 0.5s;
+    -moz-transition: background-color 0.5s , color 0.5s;
+    -ms-transition: background-color 0.5s , color 0.5s;
+    -o-transition: background-color 0.5s , color 0.5s;
+}
+.power-btn:hover {
+    background-color: var(--white);
+    color: var(--home-btn2);
 }
 @media screen and (max-width:500px){
     .power-content > h2 {
@@ -902,6 +947,15 @@ section.show-animate .animate {
 .solar-box-desc + a {
     padding: 0 20px;
     color: var(--home-btn1);
+    font-weight: 500;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+.solar-box-desc + a:hover {
+    color: var(--about-list);
 }
 .solar-box-desc + a > i {
     margin-left: 7px;
@@ -1153,6 +1207,11 @@ section.show-animate .animate {
 .product-right-box > img {
     width: 100%;
     margin-bottom: 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 .product-right-box-title {
     font-size: 18px;
@@ -1558,6 +1617,14 @@ section.show-animate .animate {
 .say-info-left-title {
     color: var(--about-list);
     margin-bottom: 5px;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+.say-info-left-title:hover {
+    color: var(--about-list-item);
 }
 .say-info-left-title + p {
     color: var(--dark);
@@ -1660,6 +1727,11 @@ section.show-animate .animate {
     width: 160px;
     height: 50px;
     margin-bottom: 70px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 .footer-nav ul {
     display: flex;

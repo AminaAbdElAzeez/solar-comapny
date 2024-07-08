@@ -29,19 +29,25 @@
                 </a>
                 <nav class="navbar">
                     <ul>
-                        <li><a href="#home" class="active">home</a></li>
-                        <li><a href="#trade">trade</a></li>
-                        <li><a href="#shop">shop</a></li>
-                        <li><a href="#contact">contact us</a></li>
+                        <li><a href="#home" class="active" data-i18="home">home</a></li>
+                        <li><a href="#trade" data-i18="trade">trade</a></li>
+                        <li><a href="#shop" data-i18="shop">shop</a></li>
+                        <li><a href="#contact" data-i18="contact">contact us</a></li>
                     </ul>
                 </nav>
-                <div class="info">
-                    <a href="#" class="call-us">call us</a>
-                    <span>+1 2345 3456 45</span>
+                <div class="header-right">
+                    <select class="select">
+                        <option value="en" data-i18="en">EN</option>
+                        <option value="ar" data-i18="ar">AR</option>
+                    </select>
+                    <div class="info">
+                        <a href="#" class="call-us" data-i18="call">call us</a>
+                        <span>+1 2345 3456 45</span>
+                    </div>
+                    <a class="list-icon">
+                        <i class="bi bi-list"></i>
+                    </a>
                 </div>
-                <a class="list-icon">
-                    <i class="bi bi-list"></i>
-                </a>
             </div>
         </div>
     </header>
@@ -54,10 +60,10 @@
                 <i class="bi bi-x-lg"></i>
             </div>
             <ul class="mobile-list">
-                <li><a href="#home">home</a></li>
-                <li><a href="#trade">trade</a></li>
-                <li><a href="#shop">shop</a></li>
-                <li><a href="#contact">contact us</a></li>
+                <li><a href="#home" data-i18="home">home</a></li>
+                <li><a href="#trade" data-i18="trade">trade</a></li>
+                <li><a href="#shop" data-i18="shop">shop</a></li>
+                <li><a href="#contact" data-i18="contact">contact us</a></li>
             </ul>
         </div>
     </nav>
@@ -73,12 +79,12 @@
                     <span>0 4</span>
                 </div>
                 <div class="home-content">
-                    <h1 class="heading animate">solar panel installers in plymouth</h1>
-                    <p class="animate">
+                    <h1 class="heading animate" data-i18="plymouth">solar panel installers in plymouth</h1>
+                    <p class="animate" data-i18="Fueled">
                         Fueled is an award-winning technology consultancy that transforms businesses by generating ideas, building products, and accelerating growth.
                     </p>
-                    <button class="call-btn home-btn animate" >call us today</button>
-                    <button class="request-btn home-btn animate">Request a call back</button>
+                    <button class="call-btn home-btn animate" data-i18="today">call us today</button>
+                    <button class="request-btn home-btn animate" data-i18="Request">Request a call back</button>
                 </div>
             </div>
         </div>
@@ -92,15 +98,27 @@
         <div class="container">
             <div class="about-content">
                 <div class="left">
-                    <h2 class="animate">The Friendliest Installers in the South-West</h2>
-                    <p class="about-desc animate">
+                    <h2 class="animate" data-i18="Friendliest">The Friendliest Installers in the South-West</h2>
+                    <p class="about-desc animate" data-i18="Solidarity">
                         At Solidarity Solar our aims are to help our customers towards a sustainable future and genuinely care about the quality of products we use for our installs. We never sell you equipment you don't need and will always advise to the best of our ability, No hard sell or pushy sales tactics ever. We take pride in our work and do our best to make sure that we meet, or exceed, our customers' expectations.
                     </p>
                     <ul class="about-list animate">
-                        <li><span>0 1 / </span>Collaborate with 100+ leading</li>
-                        <li><span>0 2 / </span>100+ leading universities and companies</li>
-                        <li><span>0 3 / </span>leading universities and companies</li>
-                        <li><span>0 4 / </span>universities and companies</li>                        
+                        <li>
+                            <span data-i18="one">0 1 / </span>
+                            <span data-i18="Collaborate">Collaborate with 100+ leading</span>
+                        </li>
+                        <li>
+                            <span data-i18="two">0 2 / </span>
+                            <span data-i18="leading">100+ leading universities and companies</span>
+                        </li>
+                        <li>
+                            <span data-i18="three">0 3 / </span>
+                            <span data-i18="universities">leading universities and companies</span>
+                        </li>
+                        <li>
+                            <span data-i18="four">0 4 / </span>
+                            <span data-i18="companies">universities and companies</span>
+                        </li>                        
                     </ul>
                 </div>
                 <div class="right animate">
@@ -137,7 +155,7 @@
                                 <div class="arrow-right-line"></div>
                             </div>
                         </div>
-                        <p class="overlay-box-desc">
+                        <p class="overlay-box-desc" data-i18="piece">
                             the piece that sold me on <br/> this polarizing trend
                         </p>
                     </div>
@@ -152,11 +170,11 @@
         <div class="container">
             <div class="flex-power">
                 <div class="power-content">
-                    <h2 class="animate">Power that Doesn't Cost the Earth</h2>
-                    <p class="power-desc animate">
+                    <h2 class="animate" data-i18="Power">Power that Doesn't Cost the Earth</h2>
+                    <p class="power-desc animate" data-i18="need">
                         If you need advice then give us a call on 07745593882 or hit the button below to request a call back!
                     </p>
-                    <button class="power-btn animate">call us today</button>
+                    <button class="power-btn animate" data-i18="today">call us today</button>
                 </div>
             </div>
         </div>
@@ -166,8 +184,8 @@
     <!-- Start Solar Section -->
     <section class="solar show-animate" id="shop">
         <div class="container">
-            <h2 class="solar-title animate">Solar Kits</h2>
-            <p class="animate">
+            <h2 class="solar-title animate" data-i18="Kits">Solar Kits</h2>
+            <p class="animate" data-i18="Complete">
                 Complete solar system kits, ready for installation. They can be used to supplement on-grid housing, a complete self-sustaining home or some combination of the two.
             </p>
             <div class="solar-content">
@@ -175,40 +193,40 @@
                     <div class="solar-box-img">
                         <img src="./images/solar-panels-meadow 2.png" alt="Solar">
                     </div>
-                    <h3>Off Grid</h3>
+                    <h3 data-i18="off">Off Grid</h3>
                     <div class="solar-box-desc desc1">
-                        <p>WOC has contributed to students so that</p>
-                        <p>they can work in their dream company,</p>
-                        <p>we will continue to stick to our commitment</p>
-                        <p class="hide1">to create an advanced generation,</p>
+                        <p data-i18="p1">WOC has contributed to students so that</p>
+                        <p data-i18="p2">they can work in their dream company,</p>
+                        <p data-i18="p3">we will continue to stick to our commitment</p>
+                        <p data-i18="p4" class="hide1">to create an advanced generation,</p>
                     </div>
-                    <a href="#">View Products<i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#" data-i18="Products">View Products<i class="fa-solid fa-arrow-right"></i></a>
                 </div>
                 <div class="solar-box animate">
                     <div class="solar-box-img">
                         <img src="./images/solar-panels-meadow 2 (1).png" alt="Solar">
                     </div>
-                    <h3>On Grid</h3>
+                    <h3 data-i18="on">On Grid</h3>
                     <div class="solar-box-desc desc2">
-                        <p>WOC has contributed to students so that</p>
-                        <p>they can work in their dream company,</p>
-                        <p>we will continue to stick to our commitment</p>
-                        <p class="hide2">to create an advanced generation,</p>
+                        <p data-i18="p1">WOC has contributed to students so that</p>
+                        <p data-i18="p2">they can work in their dream company,</p>
+                        <p data-i18="p3">we will continue to stick to our commitment</p>
+                        <p data-i18="p4" class="hide2">to create an advanced generation,</p>
                     </div>
-                    <a href="#">View Products<i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#" data-i18="Products">View Products<i class="fa-solid fa-arrow-right"></i></a>
                 </div>
                 <div class="solar-box animate">
                     <div class="solar-box-img">
                         <img src="./images/solar-panels-meadow 2 (2).png" alt="Solar">
                     </div>
-                    <h3>Hybrid</h3>
+                    <h3 data-i18="Hybrid">Hybrid</h3>
                     <div class="solar-box-desc desc3">
-                        <p>WOC has contributed to students so that</p>
-                        <p>they can work in their dream company,</p>
-                        <p>we will continue to stick to our commitment</p>
-                        <p class="hide3">to create an advanced generation,</p>
+                        <p data-i18="p1">WOC has contributed to students so that</p>
+                        <p data-i18="p2">they can work in their dream company,</p>
+                        <p data-i18="p3">we will continue to stick to our commitment</p>
+                        <p data-i18="p4" class="hide3">to create an advanced generation,</p>
                     </div>
-                    <a href="#">View Products<i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#" data-i18="Products">View Products<i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -218,8 +236,8 @@
     <!-- Start Repairs Section -->
     <section class="repairs show-animate">
         <div class="repairs-content">
-            <h2 class="animate">Repairs Over Replacement</h2>
-            <p class="repairs-desc animate">
+            <h2 class="animate" data-i18="Repairs">Repairs Over Replacement</h2>
+            <p class="repairs-desc animate" data-i18="approach">
                 We approach every aspect of our business with sustainability in mind. That's why we believe it's always worth trying to fix a system before outright replacing it, wherever possible – it requires fewer materials and is easier on the planet, as well as your wallet! If another company tells you that your system needs to be replaced, just give us a call and we'll see if we can repair it first.
             </p>
         </div>
@@ -237,60 +255,60 @@
                         <div></div>
                         <i class="fa-solid fa-bolt"></i>
                     </div>
-                    <h2 class="animate">Energy Innovators - the products we love</h2>
-                    <p class="product-desc animate">
+                    <h2 class="animate" data-i18="Energy">Energy Innovators - the products we love</h2>
+                    <p class="product-desc animate" data-i18="Lorem">
                         Lorem ipsum dolor sit amet consectetur. Suspendisse suspendisse tempor et ipsum sit egestas nunc. Diam in cum a in.
                     </p>
                 </div>
                 <div class="product-right">
                     <div class="product-right-box animate">
                         <img src="./images/image 8.png" alt="Product">
-                        <h3 class="product-right-box-title">
+                        <h3 class="product-right-box-title" data-i18="SoliTek">
                             SoliTek - The European Manufacturer of Solar Panels
                         </h3>
-                        <p>
+                        <p data-i18="work">
                             We work closely importing solar panels from Solitek, they offer 30 year warranties on their panels and are constantly coming up with new ideas - including their solar greenhouse.
                         </p>
-                        <a href="#" class="product-right-box-link">
+                        <a href="#" class="product-right-box-link" data-i18="integration">
                             View integration
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
                     <div class="product-right-box animate">
                         <img src="./images/image 8.png" alt="Product">
-                        <h3 class="product-right-box-title">
+                        <h3 class="product-right-box-title" data-i18="Sunsynk">
                             Sunsynk - No Power No Problem
                         </h3>
-                        <p>
+                        <p data-i18="build">
                             Sunsynk build the most versatile hybrid inverter on the market, designed to take up to 7kW of solar on a standard domestic supply - for simultaneous battery charging and household usage.
                         </p>
-                        <a href="#" class="product-right-box-link">
+                        <a href="#" class="product-right-box-link" data-i18="integration">
                             View integration
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
                     <div class="product-right-box animate">
                         <img src="./images/image 8.png" alt="Product">
-                        <h3 class="product-right-box-title">
+                        <h3 class="product-right-box-title" data-i18="BYD">
                             BYD - Electrifying Transport
                         </h3>
-                        <p>
+                        <p data-i18="use">
                             We use battery cells made by BYD, a market leader in lithium batteries. BYD batteries are in cars, trucks, and buses - they build robust batteries.
                         </p>
-                        <a href="#" class="product-right-box-link">
+                        <a href="#" class="product-right-box-link" data-i18="integration">
                             View integration
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
                     <div class="product-right-box animate">
                         <img src="./images/image 8.png" alt="Product">
-                        <h3 class="product-right-box-title">
+                        <h3 class="product-right-box-title" data-i18="REC">
                             REC - Solar's Most Trusted
                         </h3>
-                        <p>
+                        <p data-i18="Renewable">
                             REC - Renewable Energy Corporation, are one of the longest trading names in solar. They know how to be truly sustainable in this industry - their panels are 100% lead free and have the most trusted warranty in solar.
                         </p>
-                        <a href="#" class="product-right-box-link">
+                        <a href="#" class="product-right-box-link" data-i18="integration">
                             View integration
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
@@ -305,8 +323,8 @@
     <section class="values show-animate" id="contact">
         <div class="container">
             <div class="values-title">
-                <h2 class="animate">Our values</h2>
-                <p class="values-desc animate">
+                <h2 class="animate" data-i18="values">Our values</h2>
+                <p class="values-desc animate" data-i18="More">
                     More than 3000 users have been helped by World Online Course.
                 </p>
             </div>
@@ -321,8 +339,8 @@
                         <i class="fa-solid fa-users users"></i>
                         <i class="fa-solid fa-hand-holding hand"></i>
                     </div>
-                    <h3>Customer Care</h3>
-                    <p class="values-box-desc">
+                    <h3 data-i18="Customer">Customer Care</h3>
+                    <p class="values-box-desc" data-i18="here">
                         We're here to help you with solar panel installation in Devon and Cornwall. If we were to sum ourselves up in a few words, those would be "reliable, honest and friendly." We find our customers agree! We're with you from the start of the project to the finish.
                     </p>
                 </div>
@@ -330,9 +348,8 @@
                     <div class="values-icons">
                         <i class="bi bi-tags-fill"></i>
                     </div>
-                    <h3>Price</h3>
-
-                    <p class="values-box-desc">
+                    <h3 data-i18="Price">Price</h3>
+                    <p class="values-box-desc" data-i18="sure">
                         As I'm sure you'll have seen, solar systems don't tend to come cheap. Our aim is to make solar power accessible to everyone, so we price ourselves in a way that makes solar energy more affordable. We're focused on helping you and on helping the environment, rather than on turning a profit.
                     </p>
                 </div>
@@ -340,8 +357,8 @@
                     <div class="values-icons">
                         <i class="bi bi-globe-americas"></i>             
                     </div>
-                    <h3>Sustainability</h3>
-                    <p class="values-box-desc">
+                    <h3 data-i18="Sustainability">Sustainability</h3>
+                    <p class="values-box-desc" data-i18="said">
                         As we've said, we do this because we truly care about the planet and about seeing people embrace a greener, more eco-friendly approach to power. The world of green energy can be jargon-filled and opaque, so we want to help educate people on the big and little things they can do to protect our planet!
                     </p>
                 </div>
@@ -356,12 +373,12 @@
             <div class="say-content">
                 <div class="say-item">
                     <img src="./images/“.png" alt="Apostrophe" class="animate">
-                    <h2 class="say-title animate">what they say about WOC</h2>
-                    <p class="animate">More than 3000 users have been helped by World Online Course.</p>
+                    <h2 class="say-title animate" data-i18="what">what they say about WOC</h2>
+                    <p class="animate" data-i18="More">More than 3000 users have been helped by World Online Course.</p>
                 </div>
                 <div class="say-item animate">
                     <div class="say-item-top">
-                        <h5>What they say</h5>
+                        <h5 data-i18="they">What they say</h5>
                         <ul class="say-list">
                             <li class="active"></li>
                             <li></li>
@@ -370,15 +387,15 @@
                             <li></li>
                         </ul>
                     </div>
-                    <p class="say-desc">
+                    <p class="say-desc" data-i18="Studying">
                         “Studying at WOC is fun, the curriculum is complete, the instructors are competent, and the assignments given are also relevant to the current scope of work.”
                     </p>
                     <div class="say-info">
                         <div class="say-info-left">
                             <img src="./images/EDITED-27 - Copy 1.png" alt="info">
                             <div class="say-info-item">
-                                <h5 class="say-info-left-title">Resky Fernanda</h5>
-                                <p>Product Designer at Tokopedia</p>
+                                <h5 class="say-info-left-title" data-i18="Resky">Resky Fernanda</h5>
+                                <p data-i18="Designer">Product Designer at Tokopedia</p>
                             </div>
                         </div>
                         <div class="say-info-right">
@@ -400,37 +417,37 @@
                         <img src="./images/image 8.png" alt="logo">
                         <nav class="footer-nav">
                             <ul>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Careers</a></li>
-                                <li><a href="#">Press</a></li>
-                                <li><a href="#">Customer Care</a></li>
-                                <li><a href="#">Services</a></li>
+                                <li><a href="#" data-i18="About">About</a></li>
+                                <li><a href="#" data-i18="Careers">Careers</a></li>
+                                <li><a href="#" data-i18="Press">Press</a></li>
+                                <li><a href="#" data-i18="Customer">Customer Care</a></li>
+                                <li><a href="#" data-i18="Services">Services</a></li>
                             </ul>
                         </nav>
                     </div>
                     <div class="footer-item">
-                        <p>Get the freshest news from us</p>
+                        <p data-i18="news">Get the freshest news from us</p>
                         <form action="#">
-                            <input type="text" placeholder="Your email address…"/>
-                            <input type="submit" value="Subscribe"/>
+                            <input type="text" placeholder="Your email address…" data-i18="email"/>
+                            <input type="submit" value="Subscribe" data-i18="Subscribe"/>
                         </form>
                     </div>
                 </div>
                 <hr/>
                 <div class="footer-bottom">
                     <ul>
-                        <li>Terms & Conditions </li>
-                        <li>Privacy Policy</li>
-                        <li>Accessibility</li>
-                        <li>Legal</li>
+                        <li data-i18="Terms">Terms & Conditions</li>
+                        <li data-i18="Privacy">Privacy Policy</li>
+                        <li data-i18="Accessibility">Accessibility</li>
+                        <li data-i18="Legal">Legal</li>
                     </ul>
-                    <p class="copyright">Copyright 2023 - Solidarity Solar Ltd</p>
+                    <p class="copyright" data-i18="Copyright">Copyright 2023 - Solidarity Solar Ltd</p>
                 </div>
             </div>
         </footer>
         <!-- End Footer Section -->
 
     <!-- JS File -->
-    <script src="./js/script.js"></script>
+    <script src="./js/script.js" type="module"></script>
 </body>
 </html>
